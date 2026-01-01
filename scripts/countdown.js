@@ -1,6 +1,4 @@
-// Дата кінця (5 січня 2026 року, 00:00:00)
-const targetDate = new Date(2026, 0, 5, 0, 0, 0); 
-// Січень = 0, бо місяці в JS починаються з 0
+const targetDate = new Date(2026, 0, 10, 12, 0, 0); 
 
 function updateCountdown() {
 const now = new Date();
