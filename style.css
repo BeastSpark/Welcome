@@ -1744,3 +1744,131 @@ body.loaded .fade-timeline.in-view {
 
 
 
+
+
+
+
+
+@media (max-width: 550px) {
+
+  /* ===== 1. HEADER — реально прибираємо картинки ===== */
+  header img,
+  header picture,
+  header .img,
+  header .image,
+  header .hero,
+  header .hero-image,
+  header .header-img,
+  header .header-image,
+  header .banner img {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+
+  /* ===== 2. КАРТКИ КРАЇН ===== */
+  .cards,
+  .cards-container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+    padding: 0 12px;
+  }
+
+  .card {
+    min-width: 85px;
+    min-height: 80px;
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+
+  /* ===== 3. МОДАЛКА РЕЄСТРАЦІЇ ПО ЦЕНТРУ ===== */
+  .modal-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  .modal {
+    width: 94vw !important;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: scale(1) !important;
+    margin: 0 !important;
+  }
+
+  .register-sec input:focus + .placeholder,
+  .register-sec input:not(:placeholder-shown) + .placeholder {
+    top: 10px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .register-sec {
+    align-items: center;
+  }
+
+  .register-sec .placeholder {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    pointer-events: none;
+  }
+
+
+
+
+  /* ===== 4. FOOTER — ЛІНКИ В СТОВПЧИК ===== */
+  footer .links,
+  footer .footer-links,
+  footer nav,
+  footer .content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px;
+  }
+
+  footer .ping-wrapper {
+    margin-bottom: 10px;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  footer .content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 14px;
+  }
+
+  footer .content h4 {
+    display: none;
+  }
+
+  footer .ping-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer .links,
+  footer nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .socials-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
